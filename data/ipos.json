@@ -1,0 +1,29 @@
+[
+  {
+    "company": "Sample Tech Ltd",
+    "priceBand": "₹180 – 190",
+    "gmp": 42,
+    "gmpPct": 22.1,
+    "opens": "2026-10-06",
+    "closes": "2026-10-08",
+    "status": "Upcoming"
+  },
+  {
+    "company": "Green Energy Co",
+    "priceBand": "₹95 – 100",
+    "gmp": 8,
+    "gmpPct": 8.0,
+    "opens": "2026-09-28",
+    "closes": "2026-09-30",
+    "status": "Open"
+  },
+  {
+    "company": "Retail Chain Pvt",
+    "priceBand": "₹250 – 265",
+    "gmp": -5,
+    "gmpPct": -1.9,
+    "opens": "2026-09-22",
+    "closes": "2026-09-24",
+    "status": "Closed"
+  }
+]
