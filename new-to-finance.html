@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New To Finance — Portfolio View India</title>
+  <meta name="description" content="Start here: emergency fund, IPO savings, age-based mix. Educational reference only.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <svg class="logo-mark" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="17" fill="#0b1f3a"/>
+          <path d="M18 1 A17 17 0 0 1 35 18 L18 18 Z" fill="#2563eb"/>
+          <path d="M35 18 A17 17 0 0 1 18 35 L18 18 Z" fill="#06b6d4"/>
+          <path d="M18 35 A17 17 0 0 1 1 18 L18 18 Z" fill="#8b5cf6"/>
+          <path d="M1 18 A17 17 0 0 1 18 1 L18 18 Z" fill="#f59e0b"/>
+          <circle cx="18" cy="18" r="5.5" fill="#ffffff"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-word">Portfolio View</span>
+          <span class="logo-tag">India</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="new-to-finance.html" class="active">New To Finance</a></li>
+          <li><a href="ipo.html">IPOs</a></li>
+          <li><a href="gold-etf.html">Gold & ETF</a></li>
+          <li><a href="mutual-funds.html">Mutual Funds</a></li>
+          <li><a href="equity.html">Equity</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <a href="index.html" class="back-link">← Overview</a>
+    <h1 class="section-title">New To Finance — Start Here</h1>
+    <p class="section-sub">1) Emergency fund · 2) IPO savings bucket · 3) Then invest by age.</p>
+
+    <!-- Section A: Emergency Fund -->
+    <section class="section card" style="margin-bottom: 1.5rem;">
+      <h2 class="section-title" style="font-size: 1.1rem;">Emergency Fund</h2>
+      <div class="form-group">
+        <label for="monthly-expenses">Monthly expenses (₹)</label>
+        <input type="text" id="monthly-expenses" inputmode="numeric" placeholder="e.g. 40000" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="months-cover">Months of cover (3–6)</label>
+        <input type="number" id="months-cover" min="3" max="6" value="3">
+      </div>
+      <p class="eyebrow">Target</p>
+      <p class="output-large" id="emergency-target">₹0</p>
+      <p class="hint">Keep this in a Savings Account or Liquid Fund / Liquid FD.</p>
+      <div class="form-group mt-2">
+        <label for="current-emergency">Current emergency savings (₹) — optional</label>
+        <input type="text" id="current-emergency" inputmode="numeric" placeholder="e.g. 50000" autocomplete="off">
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="emergency-progress" style="width: 0%"></div></div>
+      <p class="hint" id="emergency-gap"></p>
+    </section>
+
+    <!-- Section B: IPO Savings -->
+    <section class="section card" style="margin-bottom: 1.5rem;">
+      <h2 class="section-title" style="font-size: 1.1rem;">IPO Savings Balance</h2>
+      <div class="form-group">
+        <label for="ipo-balance">Balance (₹)</label>
+        <input type="text" id="ipo-balance" inputmode="numeric" value="30000" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="ipo-app-amount">Typical application amount (₹)</label>
+        <input type="text" id="ipo-app-amount" inputmode="numeric" value="15000" autocomplete="off">
+      </div>
+      <p class="hint">Covers <strong id="ipo-apps-count">2 applications</strong></p>
+      <p class="mt-1"><a href="ipo.html">See current IPOs →</a></p>
+    </section>
+
+    <!-- Section C: Building blocks -->
+    <section class="section">
+      <h2 class="section-title" style="font-size: 1.1rem;">Investment building blocks</h2>
+      <div class="cards-grid">
+        <div class="card"><a href="equity.html"><h3>Equity</h3><p>Mid, large, small — in proportion.</p></a></div>
+        <div class="card"><a href="mutual-funds.html"><h3>Mutual Funds</h3><p>Categories ranked, no fund names.</p></a></div>
+        <div class="card"><a href="gold-etf.html"><h3>Gold & ETF</h3><p>Today's rate, every city.</p></a></div>
+        <div class="card"><a href="ipo.html"><h3>IPOs</h3><p>Who's listing, and at what premium.</p></a></div>
+      </div>
+    </section>
+
+    <!-- Section D: Age-based calculator -->
+    <section class="section">
+      <h2 class="section-title" style="font-size: 1.1rem;">Age-based portfolio mix</h2>
+      <p class="section-sub">Directional only — category-level, no fund names.</p>
+
+      <div class="age-tabs" role="tablist">
+        <button type="button" class="age-tab active" data-age="20-25" role="tab">20–25</button>
+        <button type="button" class="age-tab" data-age="25-30" role="tab">25–30</button>
+        <button type="button" class="age-tab" data-age="30-40" role="tab">30–40</button>
+        <button type="button" class="age-tab" data-age="40-50" role="tab">40–50</button>
+        <button type="button" class="age-tab" data-age="50+" role="tab">50+</button>
+      </div>
+
+      <div class="form-group">
+        <label for="monthly-invest">Monthly investable amount (₹) — optional</label>
+        <input type="text" id="monthly-invest" inputmode="numeric" placeholder="e.g. 10000" autocomplete="off">
+      </div>
+
+      <p class="eyebrow">Your mix at <span id="age-label">20–25</span></p>
+
+      <div class="pie-layout">
+        <ul class="pie-legend" id="pie-legend"></ul>
+        <div class="text-center">
+          <canvas id="pie-chart" width="200" height="200" aria-label="Portfolio allocation pie chart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Why start with an emergency fund?</summary>
+        <p>So a sudden expense doesn't force you to sell investments at a loss.</p>
+      </details>
+      <details>
+        <summary>Is the age mix a fixed rule?</summary>
+        <p>No — it's a starting shape; adjust for your timeline and risk comfort.</p>
+      </details>
+      <details>
+        <summary>Should I apply to every IPO?</summary>
+        <p>No — the bucket is optional; only apply if you understand the risk.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Educational only. Not advice. Not SEBI-registered.
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/new-to-finance.js"></script>
+</body>
+</html>
