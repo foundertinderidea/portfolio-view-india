@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gold &amp; ETF — Portfolio View India</title>
+  <meta name="description" content="Today's gold rate by city. Gold ETF, digital gold, physical. Educational only.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <svg class="logo-mark" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="17" fill="#0b1f3a"/>
+          <path d="M18 1 A17 17 0 0 1 35 18 L18 18 Z" fill="#2563eb"/>
+          <path d="M35 18 A17 17 0 0 1 18 35 L18 18 Z" fill="#06b6d4"/>
+          <path d="M18 35 A17 17 0 0 1 1 18 L18 18 Z" fill="#8b5cf6"/>
+          <path d="M1 18 A17 17 0 0 1 18 1 L18 18 Z" fill="#f59e0b"/>
+          <circle cx="18" cy="18" r="5.5" fill="#ffffff"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-word">Portfolio View</span>
+          <span class="logo-tag">India</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="new-to-finance.html">New To Finance</a></li>
+          <li><a href="ipo.html">IPOs</a></li>
+          <li><a href="gold-etf.html" class="active">Gold &amp; ETF</a></li>
+          <li><a href="mutual-funds.html">Mutual Funds</a></li>
+          <li><a href="equity.html">Equity</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <a href="index.html" class="back-link">← Overview</a>
+    <h1 class="section-title">Today's rate, in your city.</h1>
+    <p class="section-sub">22K and 24K, side by side.</p>
+
+    <div class="city-cards" id="city-cards">
+      <!-- filled by gold.js -->
+    </div>
+
+    <section class="section">
+      <h2 class="section-title" style="font-size: 1.1rem;">Gold, ranked by how you hold it</h2>
+      <ol class="ranked-list">
+        <li>
+          <span class="rank-num">1</span>
+          <div class="rank-body">
+            <h4>Gold ETF</h4>
+            <p>Easiest to buy, easiest to sell.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">2</span>
+          <div class="rank-body">
+            <h4>Digital gold</h4>
+            <p>Convenient, smaller holdings.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">3</span>
+          <div class="rank-body">
+            <h4>Physical gold</h4>
+            <p>Yours to hold, harder to trade.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <p class="footnote">City-level reference; metal rate only.</p>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Why is ETF ranked first?</summary>
+        <p>Liquidity — you can exit in seconds, not days.</p>
+      </details>
+      <details>
+        <summary>Do rates include making charges?</summary>
+        <p>No — this is the metal rate only.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Educational only. Not advice. Not SEBI-registered.
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/gold.js"></script>
+</body>
+</html>
