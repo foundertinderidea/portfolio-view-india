@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio View India — Know your mix</title>
+  <meta name="description" content="Educational reference for Indian portfolio shapes. Age-based mix, IPOs, gold rates, categories — not advice.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/disclaimer.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <svg class="logo-mark" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="17" fill="#0b1f3a"/>
+          <path d="M18 1 A17 17 0 0 1 35 18 L18 18 Z" fill="#2563eb"/>
+          <path d="M35 18 A17 17 0 0 1 18 35 L18 18 Z" fill="#06b6d4"/>
+          <path d="M18 35 A17 17 0 0 1 1 18 L18 18 Z" fill="#8b5cf6"/>
+          <path d="M1 18 A17 17 0 0 1 18 1 L18 18 Z" fill="#f59e0b"/>
+          <circle cx="18" cy="18" r="5.5" fill="#ffffff"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-word">Portfolio View</span>
+          <span class="logo-tag">India</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Overview</a></li>
+          <li><a href="new-to-finance.html">New To Finance</a></li>
+          <li><a href="ipo.html">IPOs</a></li>
+          <li><a href="gold-etf.html">Gold & ETF</a></li>
+          <li><a href="mutual-funds.html">Mutual Funds</a></li>
+          <li><a href="equity.html">Equity</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h1>Know your mix before you invest a rupee.</h1>
+      <p class="subline">Pick your age. See your split. That's it.</p>
+      <div class="trust-chips">
+        <span class="chip">Updated every noon</span>
+        <span class="chip">No scheme names, ever</span>
+        <span class="chip">Reference, not advice</span>
+      </div>
+    </section>
+
+    <p class="teaser">Just starting out? <a href="new-to-finance.html">New To Finance</a></p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <a href="ipo.html">
+          <div class="card-group">Updates daily</div>
+          <h3>IPOs</h3>
+          <p>Who's listing, and at what premium.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="gold-etf.html">
+          <div class="card-group">Updates daily</div>
+          <h3>Gold & ETF</h3>
+          <p>Today's rate, every city.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="mutual-funds.html">
+          <div class="card-group">Learn the shape</div>
+          <h3>Mutual Funds</h3>
+          <p>Categories ranked, no fund names.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="equity.html">
+          <div class="card-group">Learn the shape</div>
+          <h3>Equity</h3>
+          <p>Mid, large, small — in proportion.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <p>Your age. Your mix. Ten seconds.</p>
+      <a href="new-to-finance.html" class="btn btn-primary">See my mix →</a>
+    </div>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Is this telling me what to buy?</summary>
+        <p>No — it's a shape, not a stock pick.</p>
+      </details>
+      <details>
+        <summary>Where's the data from?</summary>
+        <p>Public sources, refreshed every noon.</p>
+      </details>
+      <details>
+        <summary>Should I follow this exactly?</summary>
+        <p>Use it as a start, not a finish line.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Educational only. Not advice. Not SEBI-registered.
+  </footer>
+
+  <!-- Disclaimer modal (Overview only, once per day) -->
+  <div id="disclaimer-overlay" class="disclaimer-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="disclaimer-modal">
+      <div class="disclaimer-header">
+        <div class="disclaimer-tag">Before you continue</div>
+        <h2 id="disclaimer-title">Educational only</h2>
+      </div>
+      <div class="disclaimer-body">
+        <p>Figures are directional, not advice. This site shows category-level shapes and public reference data only.</p>
+        <p>Nothing here is a recommendation to buy, sell, or hold any security, fund, or product. We are not SEBI-registered.</p>
+        <p>Always do your own research or consult a registered adviser before making financial decisions.</p>
+      </div>
+      <label class="disclaimer-check">
+        <input type="checkbox" id="disclaimer-check">
+        <span>I understand this is educational reference only.</span>
+      </label>
+      <div class="disclaimer-footer">
+        <button type="button" class="btn btn-primary" id="disclaimer-got-it" disabled>Got it</button>
+        <a href="#faq" class="disclaimer-link" onclick="document.getElementById('disclaimer-overlay').classList.remove('visible'); document.body.style.overflow='';">Full disclaimer</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/disclaimer.js"></script>
+</body>
+</html>
